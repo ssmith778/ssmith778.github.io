@@ -6,21 +6,208 @@
 
     <style>
 
+        #maindiv{
+            width:800px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .bstyle{
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgrey;
+            border-radius:5px;
+        }
+
+        .tstyle{
+            text-transform: uppercase;
+            background-color:lightskyblue;
+            border-radius:5px;
+        }
+
+
+        #header {
+            display: flex;
+            flex-direction: row;
+            /*background-color: cadetblue;*/
+            justify-content: end;
+        }
+
+        #Hcontent1 {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items: center;
+            width:200px;
+            height:70px;
+        }
+
+        #Hcontent2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 70px;
+        }
+
+        #header2{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+        }
+
+        #footer{
+            height:60px;
+            display:flex;
+            flex-direction:row;
+            justify-content:end;
+            align-items:center;
+            font-weight:bold;
+            font-size:20px;
+            color:grey;
+        }
+
+        #content1{
+            display:flex;
+            flex-direction:row;
+            /*background-color:lightcoral;*/
+        }
+
+        #leftdiv{
+            width:280px;
+            /*background-color:lightgreen;*/
+            
+        }
+
+        #rightdiv{
+            display:flex;
+            flex-direction:column;
+        }
+
+        #updiv{
+            width:510px;
+            height:110px;
+            /*background-color:aquamarine;*/
+        }
+
+        #downdiv{
+            width:510px;
+            height:160px;
+            /*background-color:chartreuse;*/
+        }
+
+        #imgdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #htmldiv{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        #cssdiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #javadiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
     </style>
 </head>
 
 <body>
-    [Exam Code]
-    <img src="static/img/a.svg" style="height:50px;"/>
-    <img src="static/img/b.svg" style="height:50px;"/>
-    <img src="static/img/css.svg" style="height:50px;"/>
-    <img src="static/img/head1.png" style="height:50px;"/>
-    <img src="static/img/head2.png" style="height:50px;"/>
-    <img src="static/img/html.svg" style="height:50px;"/>
-    <img src="static/img/javascript.svg" style="height:50px;"/>
-    <img src="static/img/linkedin.png" style="height:50px;"/>
-    <img src="static/img/logo.svg" style="height:50px;"/>
-    <img src="static/img/sqlite.svg" style="height:50px;"/>
+    NELE
+
+    <div id="maindiv">
+        <div id="header">
+            <div class="bstyle" id="Hcontent1">
+                MIS 3033 Exam 2
+                <br />
+                Sean Smith
+            </div>
+            <div class="bstyle" id="Hcontent2">
+                NELE
+            </div>
+
+        </div>
+
+        <div class="bstyle"id="header2">
+            <img src="static/img/head1.png" style="height:60px; border-radius:50%" />
+            <div>
+                Sean Smith
+                <br/>
+                MIS Student
+            </div>
+            <div><a href="https://www.linkedin.com">
+                 <img src="static/img/linkedin.png" style="width:30px;" />
+                  </a>
+            </div>
+        </div>
+
+        <div class="bstyle"id="content1">
+            <div id="leftdiv">
+                <span class="tstyle">Recent News</span>
+
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li> Learned <img src="static/img/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+
+            </div>
+
+            <div class="bstyle" id="rightdiv">
+                <div class="bstyle" id="updiv">
+                    <span class="tstyle">ABOUT ME:</span>
+                    <br/>
+                    I am a MIS Student. I like programming and I am good at C#. I learned Entity Framework to Database Manipulations. I know HTML, CSS and I started to learn Javascript. It is fun. Later I will learn C# .NET MVC dynamic web app development and Web API development.
+                </div>
+
+                <div class="bstyle" id="downdiv">
+
+                    <span id="achspan"class="tstyle">ACHIEVEMENTS</span>
+
+                    <div id="imgdiv">
+                        <div class="bstyle" id="htmldiv">
+                            <img src="static/img/html.svg" style="height:100px;" />
+                            <div>HTML</div>
+                        </div>
+                        <div class="bstyle" id="cssdiv">
+                            <img src="static/img/css.svg" style="height:100px;" />
+                            <div>CSS</div>
+                        </div>
+                        <div class="bstyle" id="javadiv">
+                            <img src="static/img/javascript.svg" style="height:100px;" />
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+
+          
+        </div>
+
+
+        <div class="bstyle"id="footer">
+            Developed by Sean Smith here for MIS 3033 Exam 2
+            <img src="static/img/logo.svg" style="height:50px;"/>
+        </div>
+    </div>
+
+    
 
 </body>
 </html>
